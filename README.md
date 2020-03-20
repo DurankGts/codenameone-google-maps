@@ -3,7 +3,7 @@
 Allows [Codename One](https://www.codenameone.com/) developers to embed native Google Maps on iOS/Android or
 fallback to Codename One MapComponent on other platforms.
 Check out a brief tutorial on using this project here:
-http://www.codenameone.com/blog/mapping-natively.html
+https://www.codenameone.com/blog/new-improved-native-google-maps.html
 
 # Limitations
 1. The native maps are only supported on Android devices that have the Google Play store (e.g. not on Amazon Kindle)
@@ -29,6 +29,8 @@ ios.afterFinishLaunching=[GMSServices provideAPIKey:@"YOUR_IOS_API_KEY"];
 Make sure to replace the values `YOUR_ANDROID_API_KEY`, `YOUR_IOS_API_KEY``, and YOUR_JAVASCRIPT_API_KEY` with the values you
 obtained from the Google Cloud console by following the instructions for [Android](https://developers.google.com/maps/documentation/android/start)
 , for [iOS](https://developers.google.com/maps/documentation/ios/start/), and for [Javascript](https://developers.google.com/maps/documentation/javascript/).
+
+NOTE: You can specify the iOS Google Maps version by setting the `var.ios.pods.GoogleMaps.version` build hint, using Cocoapods version syntax.  The default value is currently `~> 3.8`.  If you wish to use a newer version (e.g. `3.8`), then you'll need to set your `ios.pods.platform` build hint to a higher version, as newer versions of GoogleMaps have higher iOS version requirements.  `~> 2.0` requires iOS 8 or higher.  `~> 3.8` requires iOS 9. 
 
 For UWP, you'll need to define the `windows.bingmaps.token` display property inside your app's init() method to your Bing Maps token.  See [instructons on generating a BingMaps token](https://code.msdn.microsoft.com/windowsapps/Bing-Maps-for-Windows-10-d7ae3e44).  E.g.
 
