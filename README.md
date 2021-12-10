@@ -24,7 +24,7 @@ If you are using Maven as your build tool, then you can simply paste the followi
 <dependency>
   <groupId>com.codenameone</groupId>
   <artifactId>googlemaps-lib</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <type>pom</type>
 </dependency>
 ~~~~
@@ -70,7 +70,8 @@ This project was migrated from an old project on Google code http://code.google.
 
 ## Documentation
 
-[Javadocs](https://www.javadoc.io/doc/com.codenameone/googlemaps-common/latest/index.html)
+- [Javadocs](https://www.javadoc.io/doc/com.codenameone/googlemaps-common/latest/index.html)
+- [Sample Maven Project](https://github.com/shannah/googlemaps-maven-demo)
 
 ## Building From Source
 
